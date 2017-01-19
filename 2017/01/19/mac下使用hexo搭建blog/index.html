@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="mac下使用hexo搭建blog
+使用hexo搭建blog for sunny写这篇文章的起因是来自一篇大神的博客,如果有什么不对希望多多指正安装nvm在终端Terminal中执行下面的语句curl https://raw.githubusercontent.com/creationix/nvm/v">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-01-19T15:18:47.661Z"><a href="/2017/01/19/mac下使用hexo搭建blog/">2017-01-19</a></time>
+      
+      
+  
+    <h1 class="title"></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><title>mac下使用hexo搭建blog</title></p>
+<p>使用hexo搭建blog for sunny</p><br><p>写这篇文章的起因是来自一篇大神的博客,如果有什么不对希望多多指正</p><br><h1>安装nvm</h1><br><p>在终端Terminal中执行下面的语句</p><br><p style="color: orange">curl <a href="https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh</a> | sh</p><br><p>等待不会太长时间终端会提示</p><br><p style="color: orange">=&gt; Close and reopen your terminal to start using NVM</p><br><p>然后推出中端重启就完成了.因为只有重启nvm才能生效</p><br><p>使用nvm安装node.js</p><br><p style="color: orange">nvm install 0.10</p><br><h1>安装hexo</h1><br><p style="color: orange">npm install -g hexo</p><br><p>然后初始化blog的文件</p><br><p>然后利用终端进行初始化文件</p><br><p style="color: orange">cd desktop</p><br><p style="color: orange">mkdir blog</p><br><p style="color: orange">hexo init </p><br><p style="color: orange">ls </p><br><p>文件目录层级是长这样的,别眨眼请看好</p><br><img src="images/QQ20170119-0@2x.png" width="50%"><br><p>新建一篇文章,我的已经建好了.看这就是!在哪?这篇文章就是!</p><br><p style="color: orange">hexo new 我的第一篇blog</p><br><p>然后编辑md文件,完成之后啦就可以在本地预览打开了,具体操作如下</p><br><p style="color: orange">hexo generate</p><br><p style="color: orange">hexo server</p><br><p>如果你感觉你的主题不是那么炫目夺人,那好老司机就把官网告诉你你自己去看吧.</p><br><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" style="text">主题官网</a><br><p>选择好你中意的那个把他clone下来然后在配置文件中修改一下就OK了</p><br><p>例如</p><br><p style="color: orange">git clone git://github.com/tommy351/hexo-theme-light.git themes/light</p><br><p>_config.yml配置文件中设置</p><br><p style="color: orange">theme: light</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+
+  
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="http://yoursite.com/2017/01/19/mac下使用hexo搭建blog/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2017 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

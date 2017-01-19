@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Hexo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-01-19T15:18:47.661Z"><a href="/2017/01/19/mac下使用hexo搭建blog/">2017-01-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/01/19/mac下使用hexo搭建blog/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><title>mac下使用hexo搭建blog</title></p>
+<p>使用hexo搭建blog for sunny</p><br><p>写这篇文章的起因是来自一篇大神的博客,如果有什么不对希望多多指正</p><br><h1>安装nvm</h1><br><p>在终端Terminal中执行下面的语句</p><br><p style="color: orange">curl <a href="https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh" target="_blank" rel="external">https://raw.githubusercontent.com/creationix/nvm/v0.7.0/install.sh</a> | sh</p><br><p>等待不会太长时间终端会提示</p><br><p style="color: orange">=&gt; Close and reopen your terminal to start using NVM</p><br><p>然后推出中端重启就完成了.因为只有重启nvm才能生效</p><br><p>使用nvm安装node.js</p><br><p style="color: orange">nvm install 0.10</p><br><h1>安装hexo</h1><br><p style="color: orange">npm install -g hexo</p><br><p>然后初始化blog的文件</p><br><p>然后利用终端进行初始化文件</p><br><p style="color: orange">cd desktop</p><br><p style="color: orange">mkdir blog</p><br><p style="color: orange">hexo init </p><br><p style="color: orange">ls </p><br><p>文件目录层级是长这样的,别眨眼请看好</p><br><img src="images/QQ20170119-0@2x.png" width="50%"><br><p>新建一篇文章,我的已经建好了.看这就是!在哪?这篇文章就是!</p><br><p style="color: orange">hexo new 我的第一篇blog</p><br><p>然后编辑md文件,完成之后啦就可以在本地预览打开了,具体操作如下</p><br><p style="color: orange">hexo generate</p><br><p style="color: orange">hexo server</p><br><p>如果你感觉你的主题不是那么炫目夺人,那好老司机就把官网告诉你你自己去看吧.</p><br><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" style="text">主题官网</a><br><p>选择好你中意的那个把他clone下来然后在配置文件中修改一下就OK了</p><br><p>例如</p><br><p style="color: orange">git clone git://github.com/tommy351/hexo-theme-light.git themes/light</p><br><p>_config.yml配置文件中设置</p><br><p style="color: orange">theme: light</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-01-19T01:49:15.251Z"><a href="/2017/01/19/hello-world/">2017-01-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/01/19/hello-world/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+<nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2017 John Doe
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
